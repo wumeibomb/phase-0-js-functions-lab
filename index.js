@@ -27,6 +27,7 @@ function isPalindrome(word){
    return false
 }
 }
+//method that worked with an empty word param
 
 function calculateDiscountedPrice(originalPrice,discountPercentage){
     let discountedPrice = originalPrice - (originalPrice * (discountPercentage/100))
@@ -36,7 +37,7 @@ function calculateDiscountedPrice(originalPrice,discountPercentage){
 let flop = "Nothing compares to"
 let separator = flop.split("compares")
 console.log(separator)
-//split separates a string uding a given character 
+//split separates a string using a given character 
 
 console.log("Palindrome", isPalindrome("fart"))
 // This is required for the test to function properly  
