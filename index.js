@@ -1,3 +1,4 @@
+
 function calculateTax(amount) {
     let tax = 0.10 * amount
     return tax
@@ -18,17 +19,13 @@ function findMaximum(num1,num2){
 }
 
 function isPalindrome(word){
-    let pali = ""
-    for(let w = word.length-1; w >= 0; w--){
-        pali += word[1]
-    }
-    if(pali == word){
-        return true
-    }
-    else {
-        return false
-    }
-
+   let pali = word.split("").reverse().join("");
+   if(pali == word){
+    return true
+   }
+   else{
+   return false
+}
 }
 
 function calculateDiscountedPrice(originalPrice,discountPercentage){
@@ -36,8 +33,11 @@ function calculateDiscountedPrice(originalPrice,discountPercentage){
     return discountedPrice
 }
 
-console.log("Tax Calculation:",calculateTax(100))
-console.log("Uppercase conversion:",convertToUpperCase("flop"))
-console.log("Maximum number:",findMaximum(9,3))
-console.log("Palindrome boolean:",isPalindrome("rotator"))
-console.log("The dicounted price:",calculateDiscountedPrice(100,20))
+let flop = "Nothing compares to"
+let separator = flop.split("compares")
+console.log(separator)
+//split separates a string uding a given character 
+
+console.log("Palindrome", isPalindrome("fart"))
+// This is required for the test to function properly  
+module.exports = { calculateTax, convertToUpperCase, findMaximum, isPalindrome, calculateDiscountedPrice };
